@@ -27,3 +27,11 @@
 }{%
   \setcounter{framenumber}{\value{finalframe}}
 }
+
+\NewDocumentEnvironment{justbackupslides}{}{%
+  \appendix
+  \newcounter{finalframe}
+  \setcounter{finalframe}{\value{framenumber}}
+}{%
+  \setcounter{framenumber}{\value{finalframe}}
+}
